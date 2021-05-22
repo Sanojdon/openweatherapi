@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API Collect</title>
+</head>
+<body>
+<h1>API Collect</h1>
+<table>
+	<thead>
+		<tr>
+		<td>City</td>
+		<td>Latitude</td>
+		<td>Longitude</td>
+	</tr>
+	</thead>
+	<tbody>
+	{% for city in cities: %}
+	<tr>
+		<td>{{ city.ct_name }}</td>
+		<td>{{ city.ct_latitude }}</td>
+		<td>{{ city.ct_longitude }}</td>
+	</tr>
+	{% endfor %}
+	</tbody>
+</table>
+</body>
+</html>
